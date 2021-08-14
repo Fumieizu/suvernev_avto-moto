@@ -10,7 +10,7 @@ export default function Header() {
       <div className={styles.container}>
         <nav className={styles.nav}>
           <Link to="/">
-            <img src={Logo} alt="Логотип AUTO-MOTO"/>
+            <img src={Logo} alt="Логотип AUTO-MOTO" width="134" height="55"/>
           </Link>
           <Menu />
         </nav>

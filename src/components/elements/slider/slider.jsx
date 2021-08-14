@@ -6,11 +6,6 @@ import {ControlType} from '../../../const';
 const SLIDE_COUNT = 3;
 const STEP = 1;
 
-const PreviewSize = {
-  WIDTH: 128,
-  HEIGHT: 80,
-};
-
 const slides = Array.from({ length: SLIDE_COUNT }, (v, i) =>  i + 1);
 
 export default function Slider() {
@@ -37,6 +32,8 @@ export default function Slider() {
                   src={`images/slide${index}.jpg`}
                   srcSet={`images/slide${index}@2x.jpg 2x`}
                   alt="slide"
+                  width="600"
+                  height="375"
                 />
               </picture>
             </li>
@@ -61,8 +58,8 @@ export default function Slider() {
                   <img
                     src={`images/slide${index}.jpg`}
                     srcSet={`images/slide${index}@2x.jpg 2x`}
-                    width={PreviewSize.WIDTH}
-                    height={PreviewSize.HEIGHT}
+                    width="128"
+                    height="80"
                     alt="slide"
                   />
                 </picture>
