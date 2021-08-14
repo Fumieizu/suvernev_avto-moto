@@ -1,0 +1,19 @@
+@import "src/styles/_variables.scss";
+@import "src/styles/mixins.scss";
+
+.header {
+  background-color: $basic-gray;
+  padding-bottom: 10px;
+  margin-bottom: 75px;
+  min-height: 84px;
+}
+
+.container {
+  @include container;
+  padding-top: 12px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,13 @@
+@import "src/styles/mixins.scss";
+
+.container {
+  @include container;
+}
+
+.promo_wrapper {
+  margin-bottom: 85px;
+}
+
+.tabs_wrapper {
+  margin-bottom: 140px;
+}

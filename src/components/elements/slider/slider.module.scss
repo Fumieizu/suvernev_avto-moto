@@ -1,0 +1,67 @@
+@import "src/styles/_variables.scss";
+@import "src/styles/mixins.scss";
+
+.container {
+  padding-top: 15px;
+}
+
+.list {
+  @include list-style-none;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  margin: 0 0 34px;
+  padding-left: 0;
+  justify-content: center;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  max-width: 726px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  justify-self: center;
+  opacity: 0;
+
+  &::before {
+    content: "new model";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 122px;
+    height: 30px;
+    padding-top: 7px;
+    font-family: $semi-font;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: white;
+    background-color: $basic-red;
+    z-index: 1;
+  }
+}
+
+.active {
+  opacity: 1;
+}
+
+.preview_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview_list {
+  @include list-style-none;
+  display: flex;
+  justify-content: center;
+}
+
+.preview_item {
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}

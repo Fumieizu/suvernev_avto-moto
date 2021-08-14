@@ -1,0 +1,41 @@
+@import "src/styles/_variables.scss";
+@import "src/styles/mixins.scss";
+
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  background-color: $basic-white;
+  border: 1px solid $border-gray;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 31px;
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../../../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &:disabled::before {
+    opacity: 0.3;
+  }
+
+  &__next {
+    margin-right: 0;
+    margin-left: 31px;
+
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+}

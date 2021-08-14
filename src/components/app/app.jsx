@@ -1,7 +1,19 @@
 import React from 'react';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import Main from '../pages/main/main';
+import NotFoundPage from '../pages/not-found-page/not-found-page';
 
-function App() {
-  return <p>Hello, world!</p>;
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/'>
+          <Main/>
+        </Route>
+        <Route>
+          <NotFoundPage/>
+        </Route>
+      </Switch>
+    </BrowserRouter>
+  );
 }
-
-export default App;

@@ -1,0 +1,111 @@
+@import "src/styles/_variables.scss";
+@import "src/styles/mixins.scss";
+
+.article {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  column-gap: 50px;
+}
+
+.title {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: $bold-font;
+  font-size: 30px;
+  line-height: 41px;
+}
+
+.list {
+  @include list-style-none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 37px;
+
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 70px;
+
+  &:not(last-child) {
+    margin-right: 7px;
+  }
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:first-child::before {
+    background-image: url("../../../img/fuel.svg");
+  }
+
+  &:nth-child(2)::before {
+    background-image: url("../../../img/transmission.svg");
+  }
+
+  &:nth-child(3)::before {
+    background-image: url("../../../img/hp.svg");
+  }
+
+  &:nth-child(4)::before {
+    background-image: url("../../../img/engine.svg");
+  }
+}
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 37px;
+}
+
+.new_price {
+  margin-right: 32px;
+  font-family: $bold-font;
+  font-size: 35px;
+  line-height: 48px;
+}
+
+.old_price {
+  position: relative;
+  font-size: 20px;
+  line-height: 27px;
+  opacity: 0.5;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid $secondary-gray;
+    transform: rotate(-7deg);
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.request_button {
+  @include button;
+  @include default_button;
+  margin-bottom: 16px;
+  align-self: flex-start;
+}
+
+.credit_button {
+  @include button;
+  @include white_button;
+  align-self: flex-start;
+}

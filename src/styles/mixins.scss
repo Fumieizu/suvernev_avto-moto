@@ -1,0 +1,42 @@
+@mixin list-style-none {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin container {
+  max-width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@mixin button {
+  padding: 16px 20px;
+  font-family: $semi-font;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@mixin default_button {
+  color: $basic-white;
+  background-color: $basic-red;
+  border: none;
+
+  &:hover {
+    background-color: $secondary-red;
+  }
+}
+
+@mixin white_button {
+  color: $basic-red;
+  background-color: $basic-white;
+  border: 1px solid $basic-red;
+
+  &:hover {
+    color: $basic-white;
+    background-color: $basic-red;
+  }
+};

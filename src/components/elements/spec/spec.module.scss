@@ -1,0 +1,27 @@
+@import "src/styles/_variables.scss";
+@import "src/styles/mixins.scss";
+
+.list {
+  @include list-style-none;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 565px;
+}
+
+.list tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $border-gray;
+}
+
+.title {
+  padding-top: 20px;
+  padding-bottom: 7px;
+}
+
+.value {
+  color: $super-black;
+  padding-top: 20px;
+  padding-bottom: 7px;
+  text-align: end;
+}

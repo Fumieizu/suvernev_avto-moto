@@ -1,0 +1,49 @@
+@import "src/styles/_variables.scss";
+@import "src/styles/mixins.scss";
+
+.list {
+  @include list-style-none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__footer {
+    justify-content: center;
+  }
+}
+
+.list__footer .item {
+  padding: 0;
+  margin-bottom: 20px;
+
+  &:not(:last-child) {
+    margin-right: 65px;
+  }
+}
+
+.item {
+  padding: 20px 0;
+
+  &:not(:last-child) {
+    margin-right: 69px;
+  }
+}
+
+.list__footer .item {
+  padding: 0;
+  margin-bottom: 20px;
+
+  &:not(:last-child) {
+    margin-right: 65px;
+  }
+}
+
+.link {
+  font-family: $semi-font;
+  color: $basic-black;
+
+  &:hover {
+    opacity: .6;
+  }
+}
