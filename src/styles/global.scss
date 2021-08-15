@@ -32,3 +32,9 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
 }
+
+.root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}

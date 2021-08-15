@@ -16,7 +16,7 @@
 ```sh
 /css
 /fonts
-/img
+/icon
 index.html
 Readme.md
 ```

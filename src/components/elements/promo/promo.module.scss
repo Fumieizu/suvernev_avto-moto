@@ -44,19 +44,19 @@
   }
 
   &:first-child::before {
-    background-image: url("../../../img/fuel.svg");
+    background-image: url("../../../icon/fuel.svg");
   }
 
   &:nth-child(2)::before {
-    background-image: url("../../../img/transmission.svg");
+    background-image: url("../../../icon/transmission.svg");
   }
 
   &:nth-child(3)::before {
-    background-image: url("../../../img/hp.svg");
+    background-image: url("../../../icon/hp.svg");
   }
 
   &:nth-child(4)::before {
-    background-image: url("../../../img/engine.svg");
+    background-image: url("../../../icon/engine.svg");
   }
 }
 

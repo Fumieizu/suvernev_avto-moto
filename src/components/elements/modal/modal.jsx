@@ -1,7 +1,7 @@
 import React, {useState, useRef, useEffect} from 'react';
 import styles from './modal.module.scss';
 import PropTypes from 'prop-types';
-import {ReactComponent as Star} from '../../../img/Star.svg';
+import {ReactComponent as Star} from '../../../icon/Star.svg';
 import {InputName, STARS_COUNT} from '../../../const';
 
 export default function Modal({onClose, onSubmit}) {

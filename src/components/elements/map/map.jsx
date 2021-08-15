@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './map.module.scss';
 import { YMaps, Placemark } from 'react-yandex-maps';
 import {Map as YaMap} from 'react-yandex-maps';
-import pin from '../../../img/pin.svg';
+import pin from '../../../icon/pin.svg';
 
 const LOCATIONS = [59.96818547816917,30.32363844476806];
 const PIN_LOCATIONS = [59.96833919234886,30.31668174927131];
