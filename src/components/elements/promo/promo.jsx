@@ -28,8 +28,8 @@ export default function Promo() {
           </div>
         </div>
         <div className={styles.buttons}>
-          <Link to="/request" className={styles.request_button}>оставить заявку</Link>
-          <Link to="/credit" className={styles.credit_button}>В КРЕДИТ ОТ 11 000 ₽</Link>
+          <Link to='/request' className={styles.request_button}>оставить заявку</Link>
+          <Link to='/credit' className={styles.credit_button}>В КРЕДИТ ОТ 11 000 ₽</Link>
         </div>
       </div>
     </article>
