@@ -82,9 +82,9 @@ export default function Modal({onClose, onSubmit}) {
           method="Post"
           onSubmit={handleSubmit}
         >
-          <label className={`${styles.label} ${styles.label__required}`}>
+          <label className={`${styles.label} ${styles.label_required}`}>
             <input
-              className={`${styles.input} ${nameError === true ? styles.input__error : ''}`}
+              className={`${styles.input} ${nameError === true ? styles.input_error : ''}`}
               ref={nameRef}
               type="text"
               name={InputName.NAME}
@@ -155,10 +155,10 @@ export default function Modal({onClose, onSubmit}) {
               }
             </div>
           </div>
-          <label className={`${styles.review} ${styles.label__required}`}>
+          <label className={`${styles.review} ${styles.label_required}`}>
             {commentError && <span className={styles.error}>Пожалуйста, заполните поле</span>}
             <textarea
-              className={`${styles.review_text} ${commentError === true ? styles.review_text__error : ''}`}
+              className={`${styles.review_text} ${commentError === true ? styles.review_text_error : ''}`}
               name={InputName.COMMENT}
               placeholder='Комментарий'
               onFocus={() => {

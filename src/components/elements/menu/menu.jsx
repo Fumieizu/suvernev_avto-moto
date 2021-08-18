@@ -12,7 +12,7 @@ const getMenuItemByType = (type) => (
 
 export default function Menu({type = MenuType.HEADER}) {
   return (
-    <ul className={`${styles.list} ${type === MenuType.FOOTER ? styles.list__footer : ''}`}>
+    <ul className={`${styles.list} ${type === MenuType.FOOTER ? styles.list_footer : ''}`}>
       {getMenuItemByType(type).map(({text, route}) => (
         <li key={text} className={styles.item}>
           <Link to={route} className={styles.link}>{text}</Link>

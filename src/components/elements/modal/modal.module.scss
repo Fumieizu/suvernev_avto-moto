@@ -42,7 +42,7 @@
 .label {
   position: relative;
 
-  &__required {
+  &_required {
     position: relative;
 
     &::before {
@@ -79,7 +79,7 @@
     border: 1px solid $secondary-gray;
   }
 
-  &__error {
+  &_error {
     border: 1px solid $required-red;
   }
 }
@@ -141,7 +141,7 @@
     border: 1px solid $secondary-gray;
   }
 
-  &__error {
+  &_error {
     border: 1px solid $required-red;
   }
 }

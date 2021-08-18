@@ -6,7 +6,7 @@ import {ControlType} from '../../../const';
 export default function Control({type, onClick, isDisabled}) {
   return (
     <button
-      className={`${styles.control} ${type === ControlType.NEXT ? styles.control__next : ''}`}
+      className={`${styles.control} ${type === ControlType.NEXT ? styles.control_next : ''}`}
       onClick={onClick}
       disabled={isDisabled}
       type="button"

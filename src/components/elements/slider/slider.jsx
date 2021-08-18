@@ -31,7 +31,7 @@ export default function Slider() {
                 <img
                   src={`images/slide${index}.jpg`}
                   srcSet={`images/slide${index}@2x.jpg 2x`}
-                  alt="slide"
+                  alt={`slide-${index}`}
                   width="600"
                   height="375"
                 />
@@ -60,7 +60,7 @@ export default function Slider() {
                     srcSet={`images/slide${index}@2x.jpg 2x`}
                     width="128"
                     height="80"
-                    alt="slide"
+                    alt={`slide-${index}`}
                   />
                 </picture>
               </li>
