@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import Logo from '../../../icon/logo.svg';
 import styles from './header.module.scss';
 import Menu from '../menu/menu';
@@ -9,9 +8,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <nav className={styles.nav}>
-          <Link className={styles.link} to="/">
-            <img src={Logo} alt="Логотип AUTO-MOTO" width="134" height="55"/>
-          </Link>
+          <img src={Logo} alt="Логотип AUTO-MOTO" width="134" height="55"/>
           <Menu />
         </nav>
       </div>
