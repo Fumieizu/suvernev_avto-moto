@@ -10,6 +10,7 @@
 .list {
   @include list-style-none;
   padding-top: 15px;
+  max-width: 250px;
 }
 
 .item {

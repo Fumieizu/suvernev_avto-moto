@@ -9,7 +9,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
         <nav className={styles.nav}>
-          <Link to="/">
+          <Link className={styles.link} to="/">
             <img src={Logo} alt="Логотип AUTO-MOTO" width="134" height="55"/>
           </Link>
           <Menu />

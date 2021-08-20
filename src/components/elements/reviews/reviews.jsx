@@ -85,7 +85,7 @@ export default function Reviews() {
           <button onClick={toggleModal} className={styles.button}>Оставить отзыв</button>
         </div>
       </div>
-      {isModalOpen && <Modal onClose={toggleModal} onSubmit={handleSubmit}/>}
+      {isModalOpen && <Modal isOpen={isModalOpen} onClose={toggleModal} onSubmit={handleSubmit}/>}
     </>
   );
 }

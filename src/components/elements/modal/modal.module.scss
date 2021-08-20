@@ -7,7 +7,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: $overlay-color
 }
 
 .container {
@@ -17,6 +16,8 @@
   padding: 30px 35px 35px 35px;
   background-color: $basic-gray;
   transform: translate(-50%, -50%);
+  width: 698px;
+  height: 415px;
 }
 
 .form {
@@ -101,25 +102,24 @@
 .rating {
   padding-bottom: 7px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .rating_label {
   cursor: pointer;
+  tab-index: 0;
 
   &:not(:first-of-type) {
     margin-right: 8px;
   }
 }
 
-.radio:checked ~.rating_label .star,
-.radio:focus ~.rating_label .star,
-.radio:hover .star,
-.radio:hover ~.rating_label .star {
-  fill: $basic-red;
-}
-.star {
-  fill: rgba(74, 75, 76, 0.3);
+
+.stars {
+  width: 167px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
 }
 
 .review {

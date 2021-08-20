@@ -8,7 +8,7 @@
   justify-content: flex-end;
   align-items: center;
 
-  &__footer {
+  &_footer {
     justify-content: center;
   }
 }
@@ -25,14 +25,15 @@
 .item {
   padding: 20px 0;
 
-  &:not(:last-child) {
-    margin-right: 69px;
+  &:not(:first-child) {
+    margin-left: 69px;
   }
 }
 
 .list_footer .item {
   padding: 0;
   margin-bottom: 20px;
+  margin-left: 0;
 
   &:not(:last-child) {
     margin-right: 65px;
