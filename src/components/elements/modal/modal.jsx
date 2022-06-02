@@ -25,7 +25,6 @@ export default function Modal({onClose, onSubmit, isOpen}) {
   useEffect(() => localStorage.setItem('form', JSON.stringify(form)), [form]);
   useEffect(() => {
     document.body.style.overflow = 'hidden';
-    document.body.setAttribute('inert', 'true');
     return () => (document.body.style.overflow = 'visible');
   }, []);
 
